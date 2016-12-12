@@ -31,11 +31,11 @@ const mcgregorModule = function() {
   TweenMax.fromTo(neck, dur/2, { rotation: -5 }, { rotation: 5, repeat: -1, yoyo: true, ease: Power1.easeInOut, delay: dur*0.5 });
   
   TweenMax.fromTo(leftShoulder, dur, { x: 10, y: -10, rotation: -50 }, { x: -10, y: 10, rotation: 60, repeat: -1, yoyo: true });
-  TweenMax.fromTo(leftElbow, dur, { rotation: -20 }, { rotation: 70, repeat: -1, yoyo: true });
+  TweenMax.fromTo(leftElbow, dur, { rotation: 20 }, { rotation: 70, repeat: -1, yoyo: true });
   TweenMax.fromTo(leftWrist, dur, { rotation: 0 }, { rotation: 10, repeat: -1, yoyo: true });
 
   TweenMax.fromTo(rightShoulder, dur, { x: -10, y: 10, rotation: 60 }, { x: 10, y: -10, rotation: -50, repeat: -1, yoyo: true });
-  TweenMax.fromTo(rightElbow, dur, { rotation: 70 }, { rotation: -20, repeat: -1, yoyo: true });
+  TweenMax.fromTo(rightElbow, dur, { rotation: 70 }, { rotation: 20, repeat: -1, yoyo: true });
   TweenMax.fromTo(rightWrist, dur, { rotation: 10 }, { rotation: 0, repeat: -1, yoyo: true });
 }
 
